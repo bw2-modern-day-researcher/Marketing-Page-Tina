@@ -1,5 +1,5 @@
 .header {
-  .flex(space-between, center);
+  .flex(none, center);
   background-color: @research-pal-color-white;
   .border-bottom-grey();
   .width-100();
@@ -7,9 +7,18 @@
   border-radius: 0 0 20px 20px;
   margin-top: 44px;
   padding-bottom: 15px;
+  
   @media(min-width: 1280px){
     width: 1280px;
   }
+
+  .logo{
+    width: 75px;
+    height: auto;
+    text-align: center;
+
+  }
+
   h1 {
     font-size: 60px;
     font-family: 'Varela Round', sans-serif;
@@ -17,6 +26,7 @@
     text-align: center;
     color: @research-pal-color-black;
   }
+
   span {
     align-self: flex-end;
     font-size: 11px;
