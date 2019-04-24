@@ -5,43 +5,16 @@
   border-bottom: 1px solid lightgrey;
 }
 @font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Varela Round';
   font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
-}
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-body {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
 }
 .top-bar {
   width: 100%;
@@ -68,13 +41,20 @@ body {
     width: 1280px;
   }
 }
+.top-bar .container a {
+  color: #fff;
+  text-decoration: none;
+}
+.top-bar .container a:hover {
+  text-decoration: underline;
+}
 .top-bar .container .container-left {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
   flex: 1;
-  font-size: 11px;
+  font-size: 14px;
 }
 .top-bar .container .container-left span {
   cursor: pointer;
@@ -83,11 +63,11 @@ body {
 }
 .top-bar .container .container-center {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   flex: 3;
-  font-size: 9px;
+  font-size: 14px;
 }
 .top-bar .container .container-center span {
   cursor: pointer;
@@ -96,16 +76,13 @@ body {
 .top-bar .container .container-center span:last-child {
   margin-right: 0;
 }
-.top-bar .container .container-center span:hover {
-  text-decoration: underline;
-}
 .top-bar .container .container-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   flex: 1;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: bold;
 }
 .top-bar .container .container-right span {
@@ -131,8 +108,7 @@ body {
 }
 .header h1 {
   font-size: 60px;
-  font-family: Didot, serif;
-  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
   flex: 8;
   text-align: center;
   color: #000;
@@ -143,15 +119,6 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.header .date {
-  margin-left: 25px;
-  flex: 1;
-}
-.header .temp {
-  text-align: right;
-  margin-right: 25px;
-  flex: 1;
-}
 .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
@@ -161,6 +128,8 @@ body {
   width: 100%;
   height: 47px;
   background-color: #602040;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 @media (min-width: 1280px) {
   .tabs {
@@ -234,4 +203,19 @@ body {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'PT Sans', sans-serif;
 }

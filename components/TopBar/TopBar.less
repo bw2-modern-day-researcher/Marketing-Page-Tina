@@ -13,36 +13,39 @@
     @media(min-width: 1280px){
       width: 1280px;
     }
+
+    a{
+      color: @research-pal-color-white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     .container-left {
       .flex(none, center);
       flex: 1;
-      font-size: 11px;
+      font-size: 14px;
       span {
         cursor: pointer;
         margin-right: 25%;
-        font-weight: bold;
       }
     }
     .container-center {
-      .flex(center, center);
+      .flex(space-evenly, center);
       flex: 3;
-      font-size: 9px;
+      font-size: 14px;
       span {
         cursor: pointer;
         margin-right: 5%;
         &:last-child{
           margin-right: 0;
         }
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
     .container-right {
       .flex(flex-end, center);
       flex: 1;
-      font-size: 11px;
-      font-weight: bold;
+      font-size: 14px;
       span {
         cursor: pointer;
       }
