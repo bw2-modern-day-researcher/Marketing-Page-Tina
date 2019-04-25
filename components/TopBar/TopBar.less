@@ -2,7 +2,7 @@
   .width-100();
   .flex(center);
   position: fixed;
-  height: 44px;
+  min-height: 44px;
   background-color: @research-pal-color-primary;
   .container {
     .width-100();
@@ -10,6 +10,9 @@
     color: @research-pal-color-white;
     letter-spacing: 1px;
     padding: 0 10px;
+    @media(min-width: 500px){
+      flex-direction: column;
+    }
     @media(min-width: 1280px){
       width: 1280px;
     }
@@ -22,9 +25,14 @@
       }
     }
     .container-left {
-      .flex(none, center);
+      .width-100();
+      .flex(center, center);
+      flex-direction: column; 
       flex: 1;
       font-size: 14px;
+      @media(min-width: 500px){
+        .flex(none, center);
+      }
       span {
         cursor: pointer;
         margin-right: 25%;
@@ -32,8 +40,12 @@
     }
     .container-center {
       .flex(space-evenly, center);
+      flex-direction: column; 
       flex: 3;
       font-size: 14px;
+      @media(min-width: 500px){
+        .flex(space-evenly, center);
+      }
       span {
         cursor: pointer;
         margin-right: 5%;
@@ -42,10 +54,15 @@
         }
       }
     }
+
     .container-right {
-      .flex(flex-end, center);
+      .flex(center, center);
+      flex-direction: column; 
       flex: 1;
       font-size: 14px;
+      @media(min-width: 500px){
+        .flex(flex-end, center);
+      }
       span {
         cursor: pointer;
       }
