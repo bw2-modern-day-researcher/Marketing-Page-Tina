@@ -1,14 +1,15 @@
 .tabs {
   .border-bottom-grey();
   .flex(center, center);
-  .width-100();
+  width: 1280px;
+
   height: 47px;
   background-color: @research-pal-color-primary;
   border-radius: 20px;
   margin-top: 10px;
   
-  @media(min-width: 1280px){
-    width: 1280px;
+  @media(max-width: 1279px){
+    .width-100();
   }
   .topics {
     .flex(none, center);
@@ -17,6 +18,13 @@
       letter-spacing: 1px;
       font-weight: bold;
     }
+
+    .title.about{
+      @media(max-width: 500px){
+        display: none;
+      }
+    }
+
     .tab {
       .flex(none, center);
       color: @research-pal-color-white;

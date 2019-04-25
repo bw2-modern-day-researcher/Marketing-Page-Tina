@@ -1,16 +1,14 @@
 .footer{
-    .width-100();
-    .flex(center, flex-end);
-    background-color: @research-pal-color-white;
-    height: 50px;
-    border-radius: 20px 20px 0 0;
-    padding-bottom: 15px;
-
-    h5{
-        margin: 0 auto;
+  width: 1280px;
+  .flex(center, flex-end);
+  background-color: @research-pal-color-white;
+  height: 50px;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 15px;
+  h5{
+      margin: 0 auto;
     }
-
-    @media(min-width: 1280px){
-        width: 1280px;
+    @media(max-width: 1279px){
+        .width-100();
     }
 }

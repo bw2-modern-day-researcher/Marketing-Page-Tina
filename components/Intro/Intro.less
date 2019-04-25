@@ -1,12 +1,13 @@
 .intro{
   .flex(center, center);
-  .width-100();
+  width: 1280px;
   background-color: @research-pal-color-white;
   border-radius: 20px;
+  padding: 0 40px 10px;
   margin-top: 10px;
   flex-direction: column;
 
-  @media(min-width: 1280px){
-    width: 1280px;
-    }
+  @media(max-width: 1279px){
+    width: 98%;
+  }
 }

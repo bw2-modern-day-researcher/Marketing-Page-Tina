@@ -2,35 +2,24 @@
   .flex(none, center);
   background-color: @research-pal-color-white;
   .border-bottom-grey();
-  .width-100();
+  width: 1280px;
   height: 120px;
   border-radius: 0 0 20px 20px;
   margin-top: 44px;
   padding-bottom: 15px;
-  
-  @media(min-width: 1280px){
-    width: 1280px;
+  @media(max-width: 1279px){
+    .width-100();
   }
-
+  @media(max-width: 500px){
+    margin-top: 0;
+  }
   
   .logo{
-    // .flex(center, center);
-    max-width: 500px;
-    .width-100();
+    width: 500px;
     height: auto;
     margin: 0 auto;
-    // font-size: 60px;
-    // font-family: 'Varela Round', sans-serif;
-    // flex: 8;
-    // text-align: center;
-    // color: @research-pal-color-black;
+    @media(max-width: 500px){
+      .width-100();
+    }
   }
-
-  span {
-    align-self: flex-end;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
 }

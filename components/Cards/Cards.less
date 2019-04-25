@@ -1,20 +1,23 @@
 .cards-container {
   .flex(space-evenly);
-  .width-100();
+  width: 1200px;
   margin-top: 16px;
   flex-wrap: wrap;
-  @media(min-width: 1280px){
-    width: 1200px;
+  @media(max-width: 1199px){
+    width: 98%;
   }
   .card {
     .border-bottom-grey();
     .flex(space-between, none, column);
     background-color: @research-pal-color-white;
-    min-width: 450px;
     width: 49%;
     border-radius: 20px;
     margin-bottom: 16px;
     padding: 24px;
+
+    @media(max-width: 500px){
+      width: 98%;
+    }
     
     
     .photo {
@@ -27,11 +30,11 @@
 
 .cards-container-about {
   .flex(space-evenly);
-  .width-100();
+  width: 1200px;
   margin-top: 16px;
   flex-flow: wrap column;
-  @media(min-width: 1280px){
-      width: 1200px;
+  @media(max-width: 1199px){
+    .width-100();
   }
   .card {
     .border-bottom-grey();
