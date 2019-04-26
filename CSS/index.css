@@ -313,7 +313,7 @@
 }
 .cards-container-about .card .photo {
   width: 30%;
-  margin-left: 40px;
+  margin: 0 50px 0 40px;
 }
 .cards-container-about .card li {
   flex-wrap: wrap;
