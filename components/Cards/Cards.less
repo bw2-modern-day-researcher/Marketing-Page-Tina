@@ -29,35 +29,39 @@
 }
 
 .cards-container-about {
-  .flex(space-evenly);
+  .flex(space-evenly, center);
   width: 1200px;
   margin-top: 16px;
   flex-flow: wrap column;
   @media(max-width: 1199px){
-    .width-100();
+    width: 90%;
   }
+  
   .card {
     .border-bottom-grey();
-    .flex(flex-start, flex-start);
-    flex-wrap: wrap;
-    background-color: @research-pal-color-white;
-    min-width: 500px;
     
-    width: 100%;
-    height: 400px;
+    .flex(flex-start, center);
+    flex-direction: column;
+    background-color: @research-pal-color-white;
+    min-width: 435px;
+    min-height: 400px;
     border-radius: 20px;
     margin-bottom: 16px;
     padding: 24px;
-    flex-flow:wrap column;
     
+    @media(max-width: 800px){
+      .flex(center, none);
+      width: 90%;   
+      flex-direction: column;
+    }
     
     .photo {
     width: 30%;
     margin-left: 40px;
     }
 
-    ul{
-      max-width: 500px;
+    li{
+      flex-wrap: wrap; 
       font-size: 16px;
       line-height: 35px;
       color: @research-pal-color-black;
