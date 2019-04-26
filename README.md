@@ -2,7 +2,7 @@
 The following is a description of the work done by Agustina Sosa at Lambda School during Unit 1 Build Week.
 
 ## Marketing Page
-I designed and created the home and about page for the app, and also chose the theme colors and designed the logo for the app.
+I designed and created the home and about page for the marketing page of the app, and I also chose the theme colors and designed the logo for the app.
 
 ## Team Members
 Check out my awesome team members' work:
