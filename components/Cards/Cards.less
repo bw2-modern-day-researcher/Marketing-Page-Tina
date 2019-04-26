@@ -29,10 +29,9 @@
 }
 
 .cards-container-about {
-  .flex(space-evenly, center);
   width: 1200px;
   margin-top: 16px;
-  flex-flow: wrap column;
+  // flex-flow: wrap column;
   @media(max-width: 1199px){
     width: 90%;
   }
@@ -41,13 +40,21 @@
     .border-bottom-grey();
     
     .flex(flex-start, center);
-    flex-direction: column;
     background-color: @research-pal-color-white;
     min-width: 435px;
     min-height: 400px;
     border-radius: 20px;
     margin-bottom: 16px;
     padding: 24px;
+
+    .text{
+      .flex();
+      flex-direction: column;
+    }
+
+    .five{
+      .width-100();
+    }
     
     @media(max-width: 800px){
       .flex(center, none);
