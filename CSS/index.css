@@ -2,7 +2,7 @@
   width: 100%;
 }
 .border-bottom-grey {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f2f2f2;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -130,7 +130,7 @@
   align-items: center;
   flex-direction: row;
   background-color: #fff;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f2f2f2;
   width: 1280px;
   height: 120px;
   border-radius: 0 0 20px 20px;
@@ -158,7 +158,7 @@
   }
 }
 .tabs {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,6 +229,10 @@
     width: 98%;
   }
 }
+.intro h3 {
+  max-width: 800px;
+  line-height: 40px;
+}
 .cards-container {
   display: flex;
   justify-content: space-evenly;
@@ -244,12 +248,12 @@
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: none;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #f2f2f2;
   width: 49%;
   border-radius: 20px;
   margin-bottom: 16px;
@@ -280,7 +284,7 @@
   }
 }
 .cards-container-about .card {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f2f2f2;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
